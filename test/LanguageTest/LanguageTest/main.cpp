@@ -73,11 +73,20 @@ void SeparatorTest()
     std::cin >> ch;
 }
 
+
+void PrintAscii()
+{
+    for ( unsigned char i = 0; i != 255; ++i )
+    {
+        std::cout << int(i) << ".  " << i << std::endl;
+    }
+}
+
 int main(int argc, char* argv[])
 {
-    SeparatorTest();
+    PrintAscii();
 
-
+    //SeparatorTest();
     //WhitespacesTest();
 	return 0;
 }
