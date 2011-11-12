@@ -1,0 +1,6 @@
+This is an implementation of the classical lines plotting algorithm targeted to the ASCII art.
+It uses only standard C++ libraries. The only third-partt dependence is cppunit, used for unit testing.
+
+The project has been developed with MS VisualStudio 2008. However, it should compile for gcc as well (I have not checked it yet).
+
+License : BSD.
