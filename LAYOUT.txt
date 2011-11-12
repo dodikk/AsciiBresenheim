@@ -1,0 +1,6 @@
+1. app  - a directory with the main application.
+2. doc  - a directory with the specifications and articles, used for development.
+3. test - a directory for unit tests and prototyles
+4. lib  - a directory for self developed libraries
+
+P.S. This project is a test task, developed by Oleksandr Dodatko for the Ciklum company in November, 2011.
