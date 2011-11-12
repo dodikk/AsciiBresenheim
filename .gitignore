@@ -1,0 +1,10 @@
+Debug
+Release
+*.obj
+*.exe
+*.lib
+*.dll
+
+*.vcproj.*
+*.suo
+*.ncb
