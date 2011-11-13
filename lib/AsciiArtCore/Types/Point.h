@@ -1,12 +1,13 @@
 #ifndef __LIB_ASCII_ART_CORE__POINT_H__
 #define __LIB_ASCII_ART_CORE__POINT_H__
 
+
+#include <AsciiArtCore/Types/CoreTypes.h>
+
 namespace AsciiArt
 {
     namespace Core
     {
-        typedef int CoordinateType;
-
         class Point
         {
         public:
