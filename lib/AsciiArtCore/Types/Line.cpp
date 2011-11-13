@@ -52,3 +52,36 @@ bool Line::IsPoint() const
 {
     return IsHorizontal() && IsVertical();
 }
+
+CoordinateType Line::LengthX() const
+{
+    return abs( start_.GetX() - end_.GetX() );
+}
+
+CoordinateType Line::LengthY() const
+{
+    return abs( start_.GetY() - end_.GetY() );
+}
+
+
+static CoordinateType sign( CoordinateType value )
+{
+    if ( 0 == value )
+    {
+        return 0;
+    }
+
+    return ( value > 0) ? 1 : -1;
+}
+
+CoordinateType Line::OrtX() const
+{
+    return sign( end_.GetX() - start_.GetX() );
+}
+
+CoordinateType Line::OrtY() const
+{
+    return sign( end_.GetY() - start_.GetY() );
+}
+
+

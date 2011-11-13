@@ -29,6 +29,11 @@ void BresenhamePlotter::DrawLinesBeginLinesEndOnSceneWithDelegate(
     }
 }
 
+float round( float value )
+{
+    return floor( value + 0.5f );
+}
+
 void BresenhamePlotter::DrawLineOnSceneWithDelegate( 
                 const Line& line,
                 IScene* scene )
@@ -36,6 +41,7 @@ void BresenhamePlotter::DrawLineOnSceneWithDelegate(
     if ( line.IsPoint() )
     {
         scene->SetPixelXY( line.StartPoint().GetX(), line.StartPoint().GetY() );
+        return;
     }
     else if ( line.IsHorizontal() )
     {
@@ -43,6 +49,7 @@ void BresenhamePlotter::DrawLineOnSceneWithDelegate(
             line.StartPoint().GetX(), line.EndPoint().GetX(), 
             line.StartPoint().GetY(),
             scene );
+        return;
     }
     else if ( line.IsVertical() )
     {
@@ -50,10 +57,44 @@ void BresenhamePlotter::DrawLineOnSceneWithDelegate(
             line.StartPoint().GetY(), line.EndPoint().GetY(), 
             line.StartPoint().GetX(),
             scene );
+        return;
     }
 
+    //TODO : optimize for integers usage
+    float x = line.StartPoint().GetX();
+    float y = line.StartPoint().GetY();
 
+    float dx = 0.f;
+    float dy = 0.f;
+    CoordinateType length = 0;
 
+    CoordinateType xLength = line.LengthX();
+    CoordinateType yLength = line.LengthY();
+    
+    
+
+    if ( xLength > yLength )
+    {
+        dx = 1.f * line.OrtX();
+        dy = (float)yLength / (float)xLength * line.OrtY();
+        length = xLength;
+    }
+    else
+    {
+        dx = (float)xLength / (float)yLength * line.OrtX();
+        dy = 1.f * line.OrtY();
+        length = yLength;
+    }
+
+    for ( CoordinateType i = 0; i <= length; ++i )
+    {
+        scene->SetPixelXY( 
+            static_cast<CoordinateType>( round( x ) ), 
+            static_cast<CoordinateType>( round( y ) ) );
+
+        x += dx;
+        y += dy;
+    }
 }
 
 void BresenhamePlotter::DrawHorizontalLine( 

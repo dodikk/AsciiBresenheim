@@ -27,6 +27,12 @@ namespace AsciiArt
             bool IsVertical() const;
             bool IsPoint() const;
 
+        public:
+            CoordinateType LengthX() const;
+            CoordinateType LengthY() const;
+            CoordinateType OrtX() const;
+            CoordinateType OrtY() const;
+
         private:
             Point start_;
             Point end_  ;

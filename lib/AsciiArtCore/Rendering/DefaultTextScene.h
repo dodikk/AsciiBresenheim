@@ -8,12 +8,12 @@ namespace AsciiArt
     namespace Rendering
     {
         template <class STREAM>
-        class DefaultTextScene : public TextScene<STREAM, uchar[20][11] >
+        class DefaultTextScene : public TextScene<STREAM, uchar[10][21] >
         {
         public:
             DefaultTextScene(void) : 
-              TextScene( 0, 9, 0, 19),
-              pixelMapSize_( 20*11 )
+              TextScene( 0, 19, 0, 9),
+              pixelMapSize_( 21*10 )
             {
                 Clear();
             }

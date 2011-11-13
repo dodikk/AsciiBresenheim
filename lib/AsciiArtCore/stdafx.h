@@ -15,3 +15,5 @@
 
 #include <strstream>
 #include <sstream>
+
+#include <cmath>

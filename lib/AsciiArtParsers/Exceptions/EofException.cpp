@@ -4,7 +4,7 @@
 using namespace AsciiArt::Exceptions;
 
 EofException::EofException():
-    std::runtime_error( "" )
+    std::runtime_error( "Unexpected EOF encountered" )
 {
 }
 

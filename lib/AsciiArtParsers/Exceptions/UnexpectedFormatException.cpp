@@ -4,7 +4,7 @@
 using namespace AsciiArt::Exceptions;
 
 UnexpectedFormatException::UnexpectedFormatException() :
-    std::runtime_error( "" )
+    std::runtime_error( "Parser failre - unexpected format" )
 {
 }
 
