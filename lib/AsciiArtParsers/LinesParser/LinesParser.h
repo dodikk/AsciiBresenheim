@@ -57,8 +57,8 @@ namespace AsciiArt
             {
                 this->FindPointStart( inStream );
 
-                Core::CoordinateType x = 0;
-                Core::CoordinateType y = 0;
+                CoordinateType x = 0;
+                CoordinateType y = 0;
                 inStream >> x;
                 StreamUtilities::AssertValidStream( inStream );
 
