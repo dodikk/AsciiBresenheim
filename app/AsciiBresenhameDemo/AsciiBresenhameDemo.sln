@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsciiBresenhameDemo", "AsciiBresenhameDemo\AsciiBresenhameDemo.vcproj", "{82B3B78C-2AF8-43FB-A318-E4EA62621641}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53E05100-5B90-41FD-A453-E4D999EBAF34} = {53E05100-5B90-41FD-A453-E4D999EBAF34}
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA} = {290862A4-2477-4A0F-AED5-5774D5CA4DCA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsciiArtCore", "..\..\lib\AsciiArtCore\AsciiArtCore.vcproj", "{53E05100-5B90-41FD-A453-E4D999EBAF34}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsciiArtParsers", "..\..\lib\AsciiArtParsers\AsciiArtParsers.vcproj", "{290862A4-2477-4A0F-AED5-5774D5CA4DCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{842B23C4-19F9-4738-BA6C-B0CC5EB55B88}"
+	ProjectSection(SolutionItems) = preProject
+		demo.txt = demo.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82B3B78C-2AF8-43FB-A318-E4EA62621641}.Debug|Win32.ActiveCfg = Debug|Win32
+		{82B3B78C-2AF8-43FB-A318-E4EA62621641}.Debug|Win32.Build.0 = Debug|Win32
+		{82B3B78C-2AF8-43FB-A318-E4EA62621641}.Release|Win32.ActiveCfg = Release|Win32
+		{82B3B78C-2AF8-43FB-A318-E4EA62621641}.Release|Win32.Build.0 = Release|Win32
+		{53E05100-5B90-41FD-A453-E4D999EBAF34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{53E05100-5B90-41FD-A453-E4D999EBAF34}.Debug|Win32.Build.0 = Debug|Win32
+		{53E05100-5B90-41FD-A453-E4D999EBAF34}.Release|Win32.ActiveCfg = Release|Win32
+		{53E05100-5B90-41FD-A453-E4D999EBAF34}.Release|Win32.Build.0 = Release|Win32
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA}.Debug|Win32.Build.0 = Debug|Win32
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA}.Release|Win32.ActiveCfg = Release|Win32
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
