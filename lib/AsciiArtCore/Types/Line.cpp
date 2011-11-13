@@ -37,3 +37,18 @@ const Point& Line::EndPoint() const
 {
     return end_;
 }
+
+bool Line::IsHorizontal() const
+{
+    return start_.GetY() == end_.GetY();
+}
+
+bool Line::IsVertical() const
+{
+    return start_.GetX() == end_.GetX();
+}
+
+bool Line::IsPoint() const
+{
+    return IsHorizontal() && IsVertical();
+}

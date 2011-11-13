@@ -22,6 +22,11 @@ namespace AsciiArt
             const Point& StartPoint() const;
             const Point& EndPoint() const;
 
+        public:
+            bool IsHorizontal() const;
+            bool IsVertical() const;
+            bool IsPoint() const;
+
         private:
             Point start_;
             Point end_  ;

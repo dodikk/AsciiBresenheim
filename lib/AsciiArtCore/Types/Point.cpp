@@ -30,3 +30,16 @@ CoordinateType Point::GetY() const
 {
     return y_;
 }
+
+namespace AsciiArt
+{
+    namespace Core
+    {
+        bool operator==(const Point& left, const Point& right )
+        {
+            return 
+                ( left.GetX() == right.GetX() ) &&
+                ( left.GetY() == right.GetY() );
+        }
+    }
+}

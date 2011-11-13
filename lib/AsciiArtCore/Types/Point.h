@@ -25,6 +25,8 @@ namespace AsciiArt
             CoordinateType x_;
             CoordinateType y_;
         };
+
+        bool operator==(const Point& left, const Point& right );
     }
 }
 

@@ -23,6 +23,10 @@ namespace AsciiArt
             virtual void DrawLineOnSceneWithDelegate( 
                 const Core::Line& line,
                 IScene* scene );
+
+        private:
+            void DrawHorizontalLine( CoordinateType xFrom, CoordinateType xTo, CoordinateType y, IScene* scene );
+            void DrawVerticalLine( CoordinateType yFrom, CoordinateType yTo, CoordinateType x, IScene* scene );
         };
     }
 }
