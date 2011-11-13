@@ -151,11 +151,35 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
+				RelativePath=".\Rendering\BresenhamePlotter.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\IPlotter.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\IPlotterDelegate.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\IScene.cpp"
+				>
+			</File>
+			<File
 				RelativePath=".\Types\Line.cpp"
 				>
 			</File>
 			<File
 				RelativePath=".\Types\Point.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Exceptions\RangeException.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\RenderUtils.cpp"
 				>
 			</File>
 			<File
@@ -193,6 +217,30 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Rendering\BresenhamePlotter.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Types\CoreTypes.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\DefaultTextScene.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\IPlotter.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\IPlotterDelegate.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\IScene.h"
+				>
+			</File>
+			<File
 				RelativePath=".\Types\Line.h"
 				>
 			</File>
@@ -201,11 +249,23 @@
 				>
 			</File>
 			<File
+				RelativePath=".\Exceptions\RangeException.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\RenderUtils.h"
+				>
+			</File>
+			<File
 				RelativePath=".\stdafx.h"
 				>
 			</File>
 			<File
 				RelativePath=".\targetver.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Rendering\TextScene.h"
 				>
 			</File>
 		</Filter>
