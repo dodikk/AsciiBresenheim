@@ -54,6 +54,7 @@ namespace AsciiArt
             void PlotterWillDrawLine( IPlotter* plotter, const  Core::Line* line)
             {
                 currentSymbol_ = RenderUtils::NextRenderSymbol( currentSymbol_ );
+                RenderUtils::AssertLineInRange( *line, xMin_, xMax_, yMin_, yMax_ );
             }
             void PlotterDidDrawLine( IPlotter* plotter, const  Core::Line* line)
             {

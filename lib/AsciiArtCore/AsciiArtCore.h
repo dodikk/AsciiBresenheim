@@ -11,6 +11,8 @@
 #include <AsciiArtCore/Rendering/DefaultTextScene.h>
 #include <AsciiArtCore/Rendering/BresenhamePlotter.h>
 
+#include <AsciiArtCore/Exceptions/RangeException.h>
+
 #endif //__LIB_ASCII_ART_CORE_H__
 
 

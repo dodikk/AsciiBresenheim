@@ -8,6 +8,9 @@ class AsciiSceneTest : public CPPUNIT_NS::TestFixture
 CPPUNIT_TEST_SUITE( AsciiSceneTest );
     CPPUNIT_TEST( TestEmptyArrayProducesEmptyScene        );
     CPPUNIT_TEST( TestSinglePointSegmentRenderedCorrectly );
+
+    CPPUNIT_TEST( TestRangeViolationsProduceCrash         );
+
     CPPUNIT_TEST( TestHorizontalSegmentRenderedCorrectly  );
     CPPUNIT_TEST( TestVerticalSegmentRenderedCorrectly    );
     CPPUNIT_TEST( TestAverageSegmentRenderedCorrectly     );
@@ -17,6 +20,7 @@ CPPUNIT_TEST_SUITE_END();
 public:
     void TestEmptyArrayProducesEmptyScene       ();
     void TestSinglePointSegmentRenderedCorrectly();
+    void TestRangeViolationsProduceCrash        ();
     void TestHorizontalSegmentRenderedCorrectly ();
     void TestVerticalSegmentRenderedCorrectly   ();
     void TestAverageSegmentRenderedCorrectly    ();

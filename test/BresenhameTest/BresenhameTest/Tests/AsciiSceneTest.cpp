@@ -118,6 +118,89 @@ void AsciiSceneTest::TestSinglePointSegmentRenderedCorrectly()
     CPPUNIT_ASSERT( testResult );
 }
 
+void AsciiSceneTest::TestRangeViolationsProduceCrash()
+{
+    {
+        Lines_vt lines;
+        LinesParser parser;
+        std::stringstream input( "( -1, 1) - ( 2, 2 )" );
+        parser.ParseLines( input, lines );
+
+
+        DefaultTextScene<std::stringstream> scene;
+
+        BresenhamePlotter plotter;
+
+        CPPUNIT_ASSERT_THROW
+        (
+            plotter.DrawLinesBeginLinesEndOnSceneWithDelegate( 
+                lines.begin(), lines.end(), 
+                &scene, &scene ),
+            RangeException
+        );
+    }
+
+    {
+        Lines_vt lines;
+        LinesParser parser;
+        std::stringstream input( "( 0, 0) - ( 10, 2 )" );
+        parser.ParseLines( input, lines );
+
+
+        DefaultTextScene<std::stringstream> scene;
+
+        BresenhamePlotter plotter;
+
+        CPPUNIT_ASSERT_THROW
+        (
+            plotter.DrawLinesBeginLinesEndOnSceneWithDelegate( 
+                lines.begin(), lines.end(), 
+                &scene, &scene ),
+            RangeException
+        );
+    }
+
+        {
+        Lines_vt lines;
+        LinesParser parser;
+        std::stringstream input( "( 0, 0) - ( 0, -1 )" );
+        parser.ParseLines( input, lines );
+
+
+        DefaultTextScene<std::stringstream> scene;
+
+        BresenhamePlotter plotter;
+
+        CPPUNIT_ASSERT_THROW
+        (
+            plotter.DrawLinesBeginLinesEndOnSceneWithDelegate( 
+                lines.begin(), lines.end(), 
+                &scene, &scene ),
+            RangeException
+        );
+    }
+
+        {
+        Lines_vt lines;
+        LinesParser parser;
+        std::stringstream input( "( 0, 20) - ( 0, 0 )" );
+        parser.ParseLines( input, lines );
+
+
+        DefaultTextScene<std::stringstream> scene;
+
+        BresenhamePlotter plotter;
+
+        CPPUNIT_ASSERT_THROW
+        (
+            plotter.DrawLinesBeginLinesEndOnSceneWithDelegate( 
+                lines.begin(), lines.end(), 
+                &scene, &scene ),
+            RangeException
+        );
+    }
+}
+
 void AsciiSceneTest::TestHorizontalSegmentRenderedCorrectly()
 {
     CPPUNIT_FAIL( "Not implemented" );
