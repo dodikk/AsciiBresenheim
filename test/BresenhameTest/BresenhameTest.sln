@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BresenhameTest", "BresenhameTest\BresenhameTest.vcproj", "{D7630D9E-0A44-4100-9040-ECD74A9219E3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53E05100-5B90-41FD-A453-E4D999EBAF34} = {53E05100-5B90-41FD-A453-E4D999EBAF34}
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA} = {290862A4-2477-4A0F-AED5-5774D5CA4DCA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsciiArtCore", "..\..\lib\AsciiArtCore\AsciiArtCore.vcproj", "{53E05100-5B90-41FD-A453-E4D999EBAF34}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsciiArtParsers", "..\..\lib\AsciiArtParsers\AsciiArtParsers.vcproj", "{290862A4-2477-4A0F-AED5-5774D5CA4DCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7630D9E-0A44-4100-9040-ECD74A9219E3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D7630D9E-0A44-4100-9040-ECD74A9219E3}.Debug|Win32.Build.0 = Debug|Win32
+		{D7630D9E-0A44-4100-9040-ECD74A9219E3}.Release|Win32.ActiveCfg = Release|Win32
+		{D7630D9E-0A44-4100-9040-ECD74A9219E3}.Release|Win32.Build.0 = Release|Win32
+		{53E05100-5B90-41FD-A453-E4D999EBAF34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{53E05100-5B90-41FD-A453-E4D999EBAF34}.Debug|Win32.Build.0 = Debug|Win32
+		{53E05100-5B90-41FD-A453-E4D999EBAF34}.Release|Win32.ActiveCfg = Release|Win32
+		{53E05100-5B90-41FD-A453-E4D999EBAF34}.Release|Win32.Build.0 = Release|Win32
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA}.Debug|Win32.Build.0 = Debug|Win32
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA}.Release|Win32.ActiveCfg = Release|Win32
+		{290862A4-2477-4A0F-AED5-5774D5CA4DCA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
