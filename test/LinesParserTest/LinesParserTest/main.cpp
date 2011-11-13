@@ -4,6 +4,10 @@
 #include "Tests/LinesParserTest.h"
 CPPUNIT_TEST_SUITE_REGISTRATION( LinesParserTest);
 
+#include "Tests/StreamUtilitiesTest.h"
+CPPUNIT_TEST_SUITE_REGISTRATION( StreamUtilitiesTest);
+
+
 int main( int argc, char* argv[] )
 {
   // Retreive test path from command line first argument. Default to "" which resolve
