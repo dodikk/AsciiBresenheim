@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __LIB_ASCII_ART_CORE__IPLOTTER_H__
+#define __LIB_ASCII_ART_CORE__IPLOTTER_H__
 
 #include <AsciiArtCore/Types/CoreTypes.h>
 #include <AsciiArtCore/Types/AsciiArtTypes.h>
@@ -35,3 +36,5 @@ namespace AsciiArt
         };
     }
 }
+
+#endif //__LIB_ASCII_ART_CORE__IPLOTTER_H__
