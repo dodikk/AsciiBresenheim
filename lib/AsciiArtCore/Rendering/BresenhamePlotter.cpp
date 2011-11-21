@@ -61,8 +61,8 @@ void BresenhamePlotter::DrawLineOnSceneWithDelegate(
     }
 
     //TODO : optimize for integers usage
-    float x = line.StartPoint().GetX();
-    float y = line.StartPoint().GetY();
+    float x = static_cast<float>( line.StartPoint().GetX() );
+    float y = static_cast<float>( line.StartPoint().GetY() );
 
     float dx = 0.f;
     float dy = 0.f;
